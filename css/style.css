@@ -1,0 +1,151 @@
+/* Estilos para las celdas de la tabla de resultado */
+#result-table {
+    margin-top: 10px;
+    border-collapse: collapse;
+    width: 80%; /* Ancho de la tabla de resultados */
+}
+
+#result-table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+    font-weight: bold; /* Fuente en negrita */
+    background-color: #f2f2f2; /* Color de fondo gris claro */
+}
+
+#result-table tr:first-child td {
+    background-color: #333; /* Color de fondo para la primera fila */
+    color: white; /* Color del texto en la primera fila */
+}
+
+.container {
+    display: flex;
+    flex-direction: column; /* Cambiar la dirección de los elementos a columnas */
+    align-items: center;
+    text-align: center; /* Centrar el texto en el contenedor */
+}
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin: 10px;
+    padding: 20px;
+    width: 80%; /* Ancho del 80% en pantallas pequeñas */
+    max-width: 400px; /* Ancho máximo para evitar que se vuelva demasiado ancho */
+}
+
+.matrix-card {
+    width: 80%; /* Ancho del 80% en pantallas pequeñas */
+    max-width: 400px; /* Ancho máximo para evitar que se vuelva demasiado ancho */
+}
+
+table {
+    border-collapse: collapse;
+    margin: 10px auto;
+    width: 80%; /* Ancho del 80% en pantallas pequeñas */
+    max-width: 400px; /* Ancho máximo para evitar que se vuelva demasiado ancho */
+}
+
+td {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+}
+
+input[type="number"] {
+    width: 40px;
+}
+
+#result-container {
+    margin-top: 20px;
+}
+
+#result-table {
+    margin-top: 10px;
+}
+
+/* Estilo para los iconos pequeños */
+.small-icon {
+    font-size: 14px; /* Tamaño del icono */
+}
+
+/* Estilo para los botones */
+button {
+    background-color: #007BFF; /* Color de fondo */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 10px 15px; /* Espaciado interno (arriba/abajo, izquierda/derecha) */
+    cursor: pointer; /* Cambiar el cursor al pasar sobre el botón */
+    margin: 10px 0; /* Añadir espacio vertical entre botones */
+}
+
+/* Estilo para los botones cuando se les pasa el mouse */
+button:hover {
+    background-color: #0056b3; /* Cambiar el color de fondo al pasar el mouse */
+}
+
+#result-display {
+    display: none;
+}
+
+/* Media query para pantallas más pequeñas */
+/* Media query para pantallas más pequeñas */
+/* Media query para pantallas más pequeñas */
+@media screen and (max-width: 768px) {
+    .card, .matrix-card, input[type="number"] {
+        width: 100%; /* Ancho completo en pantallas más pequeñas */
+        max-width: none; /* Eliminar el ancho máximo */
+        margin-right: 10px; /* Agregar un margen de 10px entre los inputs */
+    }
+
+    input[type="number"]:last-child {
+        margin-right: 0; /* Eliminar el margen derecho para el último input */
+    }
+
+    table {
+        width: 50%; /* Ancho completo en pantallas más pequeñas */
+    }
+
+    /* Evitar que las celdas de la tabla se estiren */
+    #result-table td {
+        width: auto;
+    }
+}
+
+
+/* Estilos para el navbar */
+/* Estilos para el navbar */
+.navbar {
+    background-color: #007BFF; /* Color de fondo inicial del navbar */
+    color: white; /* Color del texto del navbar */
+    padding: 10px 0; /* Espaciado interno del navbar */
+    text-align: center; /* Centrar el texto del navbar */
+    width: 100%; /* Ancho del navbar al 100% de la pantalla */
+    position: fixed; /* Fijar el navbar en la parte superior */
+    top: 0; /* Alinear el navbar en la parte superior */
+    left: 0; /* Alinear el navbar en la parte izquierda */
+    z-index: 1; /* Asegurarse de que esté por encima del contenido */
+}
+
+
+/* Estilos para cambiar el color del navbar según los botones */
+button {
+    /* ... Tus estilos existentes para los botones ... */
+}
+
+button#addRowA:hover, button#addColumnA:hover,
+button#addRowB:hover, button#addColumnB:hover,
+button#clearMatrixA:hover, button#clearMatrixB:hover,
+button#calculate:hover {
+    background-color: #0056b3; /* Cambiar el color de fondo al pasar el mouse */
+}
+
+/* Cambiar el color del navbar al pasar el mouse sobre los botones */
+button#addRowA:hover ~ .navbar, button#addColumnA:hover ~ .navbar,
+button#addRowB:hover ~ .navbar, button#addColumnB:hover ~ .navbar,
+button#clearMatrixA:hover ~ .navbar, button#clearMatrixB:hover ~ .navbar,
+button#calculate:hover ~ .navbar {
+    background-color: #0056b3; /* Cambiar el color de fondo al pasar el mouse */
+}

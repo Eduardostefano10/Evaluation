@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <link rel="stylesheet" href="/css/style.css">
+
+    <title>Calculadora de Matrices</title>
+
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar-brand">Calculadora de Matrices</div>
+    </nav>
+    <br><br><br>
+    <div class="container">
+        <div class="card matrix-card">
+            <h2>Matriz A</h2>
+            <button id="addRowA" class="styled-button"><i class="fas fa-arrow-alt-circle-down"></i></button>
+            <button id="addColumnA" class="styled-button"><i class="fas fa-arrow-alt-circle-right"></i></button>
+            <button id="clearMatrixA" class="styled-button"><i class="fas fa-trash"></i> Clear</button>
+            <table id="matrixA">
+                <tbody>
+                    <tr>
+                        <td><input type="number"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="card matrix-card">
+            <h2>Matriz B</h2>
+            <button id="addRowB" class="styled-button"><i class="fas fa-arrow-alt-circle-down"></i></button>
+            <button id="addColumnB" class="styled-button"><i class="fas fa-arrow-alt-circle-right"></i></button>
+            <button id="clearMatrixB" class="styled-button"><i class="fas fa-trash"></i> Clear</button>
+            <table id="matrixB">
+                <tbody>
+                    <tr>
+                        <td><input type="number"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="card matrix-card">
+            <button id="calculate">Multiplicar "X"</button>
+            <!-- Agrega un elemento div para mostrar el resultado en la página -->
+            <div id="result-display">
+                <h2>Resultado: "A*B"</h2>
+                <table id="result-table"></table>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="/js/script.js"></script>
+
+</body>
+
+</html>
